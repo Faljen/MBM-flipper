@@ -1,6 +1,6 @@
 class Draw {
     constructor() {
-        this.options = ['img/1.png', 'img/2.png', 'img/3.png'];
+        this.options = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg'];
         let _drawResult = this.drawResult();
     }
 

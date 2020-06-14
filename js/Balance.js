@@ -24,8 +24,8 @@ class Balance {
                     _money -= value;
                 }
             } else {
-                alert("Podałeś nieprawidłową wartość!")
-                throw Error('Nieprawidłowa wartość');
+                alert("You entered an invalid value!")
+                throw Error('Invalid value');
             }
         }
 

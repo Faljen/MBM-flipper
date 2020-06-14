@@ -23,15 +23,15 @@ class Game {
             element.src = resultOfDraw[index];
         })
 
-        if (result === 'Mateusz' || result === 'Brancewicz') {
-            result = `WYGRAŁEŚ ${wonMoney}€!`;
+        if (result === 'Nerd' || result === 'BlackGuy') {
+            result = `WIN ${wonMoney}€!`;
             this.spanResult.style.color = 'green';
-        } else if (result === 'Misiek') {
-            result = `WIELKA WYGRANA!!! ${wonMoney}€!`;
+        } else if (result === 'Cat') {
+            result = `BIG WIN!!! ${wonMoney}€!`;
             this.spanResult.style.color = 'green';
-            this.spanResult.style.left = '35%'
+            this.spanResult.style.left = '42%'
         } else if (!result && result !== '') {
-            result = `PRZEGRAŁEŚ ${bet}€`;
+            result = `LOSE ${bet}€`;
             this.spanResult.style.color = 'black';
         }
 
@@ -51,16 +51,16 @@ class Game {
 
         if (bet < 2) {
             this.inputBid.value = '';
-            return alert('Minimalna stawka to 2€ !')
+            return alert('Minimal bid is 2€ !')
         }
 
         if (this.inputBid.value == '') {
-            return alert('Podaj stawkę!')
+            return alert('Enter the bid!')
         }
 
         if (!this.balance.checkCanPlay(bet)) {
             this.inputBid.value = '';
-            return alert('Masz za mało środków!')
+            return alert('You don\'t have enough founds!')
         }
 
         this.balance.changeBalance(bet, '-');
@@ -77,7 +77,7 @@ class Game {
 
         if (this.balance.getMoney() <= 0) {
 
-            alert('Koniec gry! Nie masz środków... Spróbuj ponownie!');
+            alert('End of the game! You don\'t have more founds... Try again!');
             location.reload();
 
         }

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('/MBM-flipper/img/background.png');
+    background-image: url('/img/background_image.png');
 }
 
 .wrap {
@@ -87,9 +87,16 @@ h1 {
     font-weight: bold;
 }
 
+.score span.result {
+    position: fixed;
+    left: 45%;
+    font-size: 50px;
+    text-align: center;
+}
+
 .info {
     position: fixed;
-    left: 80%;
+    left: 75%;
     top: 75%;
 }
 
